@@ -1,0 +1,429 @@
+:root {
+    --background-color :black ;
+    --color:white;
+}
+
+* {
+    background-color: var(--background-color);
+    color: var(--color);
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    width: 100%;
+    height: 5em;
+    border-bottom: 1px solid grey;
+    display: flex;
+    margin-bottom:1em ;
+}
+body{
+    height: auto;
+    width: 100%;
+  
+
+}
+
+
+main {
+    display: flex;
+    padding-right:6em ;
+    margin-bottom: 3em;
+  
+}
+.first  , .second ul , .third {
+    display: flex;
+    
+}
+header > div {
+    flex: 1;
+    
+    
+    
+}
+.first > div {
+    margin-left: 1.5em ;
+    align-self: center;
+}
+nav ul {
+    list-style-type: none;
+    justify-content: center;
+   
+    height:1.5em ;
+    font-size: 1.2em;
+}
+nav a {
+    text-decoration: none;
+    
+}
+nav ul li {  
+    flex: 1;
+    height: 1.5em;
+    max-width: 10em;
+
+    
+    
+    
+}
+nav ul a:hover {
+    text-decoration: underline;
+    transition: 0.4s;
+}
+.third {
+    justify-content: center;
+    gap: 5em;
+    align-self: center;
+    max-width: 20em;
+    
+}
+.third div {
+    position: relative;
+    display: flex;
+
+}
+.third div p{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    width: 20px;
+    text-align: center;
+}
+.second {
+    
+    align-self: center;
+}
+.first img{
+    width: 3em;
+}
+.third img {
+    width: 2em;
+}
+.first {
+    max-width: 50em;
+}
+.cart-container{
+    padding: 4em;
+    flex: 3;
+
+}
+.credit-card {
+    flex: 2;
+    height: 100%;
+  
+    border: 2px solid rgba(128, 128, 128, 0.505);  
+}
+
+
+.cart-container .grid-items {
+    display: grid;
+    margin-top:4em;
+    row-gap: 1em;
+    max-height: 20em;
+    grid-template-columns: 2fr 1fr 1fr 1fr 0.3fr;
+    grid-template-rows: repeat(auto , 50px);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.684);
+    overflow-y: scroll;
+    position: relative;
+  
+   
+}
+.grid-items .items {
+    grid-column: 1/6;
+    display: grid;
+    height: 8em;
+  
+ 
+    grid-template-columns:2fr 1fr 1fr 1fr 0.3fr ;
+    grid-template-rows: repeat(auto, 1fr);
+}
+
+.grid-items .items > div {
+
+    height: 100%;
+}
+.items .things {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+ .div-img {
+  
+    height: 90%;
+    max-width: 8em;
+
+    
+    
+}
+.div-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    
+}
+
+.grid-items > div:nth-child(2),
+.grid-items > div:nth-child(3),
+.grid-items > div:nth-child(4){
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+    position: sticky;
+    top:0;
+} 
+.grid-items > div:nth-child(1){
+    font-weight: bold;
+    font-size: 1.1em;
+    top:0;
+    position: sticky;
+
+ 
+}
+.things .info {
+    margin-left: 1.7em;
+    margin-top: 1em
+    
+   
+}
+.things .info> p{
+    margin-top: 0.5em;
+}
+.things .info > p:nth-child(1){
+    font-weight: bold;
+    font-size: 1em;
+}
+.items .size select{
+    width: 80%;
+    height: 30%;
+    
+}
+ 
+.items .quan img {
+    
+    width: 1.2em;
+}
+
+.items .quan div {
+    margin-left: 10px;
+}
+
+.items .cancel img {
+    width: 2em;
+}
+.items .cancel ,.items .total,.items .quan,.items .size{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-container .price {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    margin-top: 1.3em;
+}
+.cart-container .price > div {
+    margin-top: 1em;
+    font-size: 1.1em;
+    display: flex;
+}
+.cart-container .price > div:nth-child(1),
+.cart-container .price > div:nth-child(3),
+.cart-container .price > div:nth-child(5){
+    justify-content: center;
+    grid-column: 2/3;
+}
+.cart-container .price > div:nth-child(2),
+.cart-container .price > div:nth-child(4),
+.cart-container .price > div:nth-child(6){
+    grid-column: 3/4;
+   
+    justify-content: end;
+    font-weight: bold;
+}
+.cart-container .price > div:nth-child(5),
+.cart-container .price > div:nth-child(6){
+    margin-top: 0.4em;
+    padding-top: 0.5em;
+    border-top: 1px solid white;
+}
+
+.credit-card {
+    padding: 2em 0 2em 2em;
+}
+.credit-card fieldset> div {
+    margin: 3em 0;
+}
+.credit-card fieldset div label {
+    display: block;
+    margin: 1em 0;
+}
+.credit-card fieldset div p {
+    display: inline;
+}
+.credit-card fieldset img {
+    width: 1.4em;
+}
+.credit-card fieldset .payment >input, img,p{
+    vertical-align: middle;
+    margin-left: 0.5em;
+
+
+}
+.credit-card fieldset .payment > div {
+    margin-top: 0.5em;
+}
+.credit-card fieldset >div:not(.payment, .expire) >input{
+    height: 2em;
+    font-size: 1em;
+    padding-left: 0.3em ;
+    outline: none;
+    border: none;
+    width: 80%;
+    border-bottom: 1px solid grey;
+
+}
+.credit-card fieldset >div label{
+    color: rgb(128, 128, 128);
+    font-weight: bold;
+}
+.credit-card fieldset {
+
+    border: none;
+}
+
+
+.credit-card button {
+    width: 90%;
+    border: 1px solid white;
+    height: 3em;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+    justify-content: center;
+
+}
+.credit-card .button-submit {
+   
+    display: flex;
+}
+.credit-card button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+.credit-card fieldset .expire > input , select {
+    width: 10em;
+    height: 2.5em;
+    border: 1px solid grey;
+    padding-left: 0.5em;
+    outline: none;
+    
+    margin-right:0.5em ;
+}
+.price button img{
+    width: 1.3em;
+}
+.price button p {
+    display: inline;
+    font-size: 1.2em;
+}
+.price button:hover p {
+    text-decoration: underline;
+    cursor: pointer;
+}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 10px;
+    background-color: grey;
+    visibility: hidden;
+}  
+.cart-container:hover ::-webkit-scrollbar {
+    visibility: visible;
+
+}
+
+.noItem {
+    grid-column: 1/6;
+    text-align: center;
+    
+}
+.noItem  img{
+    width: 3em;
+    
+}
+select, option ,
+ input[type="radio"], 
+.third > div, .quan > div:nth-child(1),
+.quan > div:nth-child(3),
+.cancel,.not-yet > div >div ,.cross {
+    cursor: pointer;
+ }
+ .not-yet {
+    padding: 2em;
+    position: fixed;
+    z-index: 2;
+    width: 350px;
+    height: 100%;
+    top: 0;
+    left: -400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+ }
+ .not-yet > div {  
+    flex: 1;
+    font-size: 2em;
+    text-decoration: none;
+    
+ }
+ .not-yet > div > div  {
+    display: inline-block;
+    font-size: 0.4em;
+  
+    
+ }
+ .not-yet img {
+    width: 3em;
+ }
+ .not-yet a {
+    text-decoration: none;
+
+ }
+ .not-yet a:hover  {
+    color:blue;
+ }
+ .cross {
+    display: none;
+ }
+ .appear {
+    left:0;
+    transition: 0.5s;
+ }
+ @media (max-width: 1200px){
+    main {
+        flex-direction: column  ;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .credit-card{
+        width: 90%;
+        margin: auto;
+    }
+ 
+ }
+@media (max-width: 900px) {
+    .second {
+        display: none; 
+     }
+    .cross {
+        display: block;
+    }
+    .thislogo {
+        display: none;
+    }
+}

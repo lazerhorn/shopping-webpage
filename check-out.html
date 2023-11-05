@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/check-out.css">
+</head>
+<body>
+    <div class="not-yet" id="sidebar">
+        <div><div onclick="turn()"><img src="pictures/picsvg_download (2).svg" alt=""></a></div>
+        <div><p>𝓕𝓵𝓸𝓾𝓻𝓯𝓾𝓵 𝓓𝓮𝓵𝓲𝓰𝓱𝓽 知味面点</p></div>
+        
+    </div>
+
+    <div><a href="menu.html">Shop</a></div>
+    <div><a href="">Journal</a></div>
+    <div><a href="">About Us</a></div>
+    <div><a href="contact-us.html">Contact</a></div>
+    </div>
+    <header>
+        <div class="first"><div class="thislogo" ><a href="check-out.html"><img src="pictures/icons8-noodles-96.png" alt=""></a></div>
+        <div  class="cross"onclick="turn()" ><img src="pictures/picsvg_download (3).svg"alt=""></div>
+                            <div><p>𝓕𝓵𝓸𝓾𝓻𝓯𝓾𝓵 𝓓𝓮𝓵𝓲𝓰𝓱𝓽 知味面点</p></div>
+                        </div>
+        <div class="second">
+        <nav>
+            <ul>
+                <li><a href="menu.html">Shop</a></li>
+                <li><a href="#">Journal</a></li>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="contact-us.html">Contact</a> </li>
+            </ul>
+        </nav>
+    </div>
+        <div class="third">
+            <div><img src="pictures/HCioKI01.svg" alt=""></div>
+            <div><img src="pictures/XZ0imh01.svg" alt=""><p id="updateItems">0</p></div>
+        </div>
+    </header>
+    <main>
+        <div class="cart-container">
+            <h1>Shopping Cart.</h1>
+            <div class="grid-items" id="food-Grid">
+                <div>Product</div>
+                <div>Size</div>
+                <div>Quantity</div>
+                <div>Total Price</div>  
+                <!-- <div class="items">
+                    <div class="things">
+                        <div class="div-img">
+                            <img src="pictures/download (3).jfif" alt="">
+                        </div>
+                        <div class="info">
+                            <p>Cool Noodle</p>
+                            <p>Price</p>
+                        </div>
+                    </div>
+                     <div class="size">
+                        <select name="" id="">
+                            <option value="">Big Bowl</option>
+                            <option value="">Medium Bowl</option>
+                            <option value="">Small Bowl</option>
+                        </select>
+                    </div>
+                    <div class="quan">
+                        <div>
+                            <img src="pictures/2mMV0E01.svg" alt="">
+                        </div>
+                        <div>
+                            <p>0</p>
+                        </div>
+                        <div>
+                            <img src="pictures/Ls6B0m01.svg" alt="" >
+                        </div>
+                    </div>
+                    <div class="total">
+                        <p>Total Price</p></div>
+
+                    <div class="cancel"><img src="pictures/uNKkRg01 (1).svg" alt=""></div>
+                </div> -->
+                
+                
+                
+                
+            </div>
+        <div class="price">
+            <div >Sub-Total</div>
+            <div id="sub-total">0</div>
+            <div>Shipping</div>
+            <div>Free</div>
+            <div >Total</div>
+            <div id="total">0</div>
+            <div><a href="menu.html"><button><img src="pictures/picsvg_download (14).svg" alt=""><p>Continue Shopping</p></button></a></div>
+        </div>
+        </div>
+        <div class="credit-card">
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" id="form-thing" method="post" target="_blank">
+                <h2>Payment Info.</h2>
+                <fieldset>
+                    <input type="hidden" name="Items-orderd" value="">
+                    <div class="payment">
+                    <label for="">Payment Method</label>
+                    <div>
+                        <input type="radio"  checked name="payment-Method" value="Credit-Card"><img src="pictures/icons8-mastercard-credit-card-48.png" alt=""><p>Credit-card</p>
+                    </div>
+                    <div>
+                        <input type="radio" name="payment-Method" value="Paypal"><img src="pictures/icons8-paypal-48.png" alt=""><p>Paypal</p>
+                    </div>    
+                    </div>
+                    <div>
+                        <label for="">Name on Card</label>
+                        <input type="text" placeholder="Eg. John Deo" name="name" required pattern="[A-Za-z]+">
+                    </div>
+                    <div>
+                        <label for="">Card Number</label>
+                        <input type="password" name="Card-Number" placeholder="Eg. 1245 3153 1355 1213" required pattern="[0-9]+">
+                    </div>
+                    <div class="expire">
+                       
+                        <label for=""> Expiration date</label>
+                        <select name="month" id="month"></select>
+                        <select name="year" id="year"></select>
+                        <input type="text" placeholder="CYY" required name="CYY">
+                    </div>
+                </fieldset>
+                <div class="button-submit">
+                    <button type="submit">Check Out</button>
+                </div>
+                
+            </form>
+        </div>
+    </main>
+    <script src="logic/food.js"></script>
+    <script src="logic/check-out.js"></script>
+</body>
+</html>
+

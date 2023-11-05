@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/log-in.css">
+<body>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" id="form" target="_blank">
+        <h1>Log In</h1>
+        <div class="loginEmail">
+            <label for="email">Enter your email</label>
+            <input type="email" id="email" name="email">
+            <p id="email-text"></p>
+        </div>
+        <div class="loginPassword">
+            <label for="password">Enter your password</label>
+            <input type="password" id="password" name="password">
+            <p id="password-text"></p>
+        </div>
+        <div class="last">
+        
+            <input type="submit" id="submit-button">
+            <p id="submit-text"></p>
+            <input type="checkbox"><label for="">Remember your login details?</label>
+        </div>
+    </form>
+    <p>Don't have an account? <a href="form-page.html">Sign Up here</a></p>
+    <script src="logic/log-in.js"></script>
+</body>
+</html>

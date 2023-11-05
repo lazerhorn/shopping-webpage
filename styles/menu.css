@@ -1,0 +1,388 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+html {
+    background-color: black;
+    color: white;
+}
+header {
+ 
+    display: flex;
+    height: 4em;
+  
+  
+}
+header > div {
+
+    flex:1;
+    display: flex;
+}
+
+.heads {
+    min-width: 4em;
+}
+.headf img {
+   
+    vertical-align: middle;
+}
+
+
+#form-input {
+    padding: 0 5px;
+}
+form button {
+    width: 6em;
+    height: 2.9em;
+    vertical-align: middle;
+    position: relative;
+    right: 5px;
+    border-radius: 0 20px 20px 0;
+    align-self: auto;
+    background-color: #000;
+    border:0.5px solid rgba(128, 128, 128, 0.505);
+}
+form button img {
+    width: 1.3em;
+}
+form button:hover {
+    filter: brightness(0.5);
+    transition: 0.3s;
+}
+.profile , .cart {
+    flex: 1;
+    align-self: center;
+    text-align: center;
+    position: relative;
+    
+
+    max-width: 4em;
+    
+    
+}
+.profile img , .cart img {
+    width: 3em;
+}
+
+.headt {
+    display: flex;
+    max-width: 20em;
+  
+    justify-content: center;
+    gap: 4em;
+
+
+}
+.headf p{
+    margin-left: 3em;
+    
+    
+}
+.search {
+    flex: 5;
+    height: 2.9em;
+    outline: none;
+    border-radius: 20px 0 0 20px;
+    padding:0 1em;
+    margin-right: 0;
+    background-color: #000;
+    color: white;
+    min-width: 2em;
+    border:0.3px solid rgba(128, 128, 128, 0.505);
+    
+    
+}
+form{
+    display: flex;
+    width: 100%;
+    align-self: center;
+    max-width: 40em;
+    text-align: center;
+
+    align-items: center;
+
+}
+.headf {
+    align-items: center;
+    padding: 0 1em;
+    max-width: 30em;
+    min-width: 1em;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+ 
+    
+    min-width: 5em;
+    width:8em;
+    height: 100%;
+    height:100%;    
+    
+}
+.box img {
+    width: 2em;
+}
+.box {
+    
+    text-align: center;
+    margin-top: 2em;
+    max-height: 7em;
+    border:1px solid black;
+
+
+
+
+}
+.box img , .box p {
+  
+    margin-top: 1em;
+    
+}
+.container {
+    display: flex;
+   
+}
+main{
+    
+    margin-top: 2em;
+    margin-left: 6em;
+    /* border: 1px solid rgba(67, 65, 65, 0.296); */
+    flex:auto;
+  
+ 
+}
+.headt p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    color:black;
+    width: 1.5em;
+    border-radius: 5px;
+
+
+}
+
+.slider {
+    display: flex;
+    justify-content: center;    
+    gap: 5%;
+    height: 4em;
+    
+}
+.icon img{
+    width: 2em;
+   
+}
+.icon {
+    color:white;    
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 10em;
+    background-color: #282828;
+    border-radius: 50px;
+    padding-left: 1em;
+    height: 3em;
+    align-self: center;
+}
+.grid {
+   
+    display: grid;
+    height: 39em;
+    grid-template-columns: repeat(auto-fill, minmax(330px,1fr));
+    grid-template-rows: auto;
+    overflow-y: scroll;
+    margin-top: 1em;
+    column-gap: 1em;
+    position: relative;
+    padding-right: 1em;
+    row-gap: 1em;
+}
+.food-container .yummy{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+    transition: 0.3s;
+    overflow: hidden;
+    transition: transform 0.3s;
+    transform-origin: center;
+  
+
+}
+.hover-thing:hover ~.yummy {
+   transform: scale(1.1);
+   transition: 0.5s;
+   filter: brightness(0.5);
+   
+   
+}
+.food-container {
+    width: 100%;
+
+}
+.food-picture {
+    width: 100%;
+    height: 13em;
+    overflow: hidden;
+    position: relative;
+
+}
+.grid > div {
+    border-radius: 15px;
+    border: 2px solid rgba(128, 128, 128, 0.265);
+    height: 20em;
+    object-fit: contain;
+    
+}
+.grid .amount img {
+    width: 1em;
+}
+.grid .amount {
+    display: flex;
+}
+.amount {
+    padding:1em 1em 0 0      ;
+    justify-content: end;
+    gap: 8px;
+}
+.food-info {
+
+    text-align: center;
+}
+.food-info p{
+    margin-top: 0.5em;  
+    
+}
+
+
+.amount div , .profile, .cart , form button , .icon , .box {
+    cursor: pointer;
+}
+.noItem {
+    width:17em;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    text-align: center ;
+    
+    
+    
+}
+.noItem img{
+    width: 100%;
+    margin-bottom: 1em;
+}
+.noItem button {
+    margin-top: 2em ;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.5s;
+    height: 3em;
+    width: 6em;
+    
+}
+.noItem button:hover{
+    background-color: white;
+    color: black;
+    border-color:black;
+    transition: 0.5s;
+}
+.hover-thing {
+    position: absolute;
+    top: 300px;
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+    z-index: 3;
+    overflow: hidden;
+
+
+}
+.hover-thing img {
+    width: 100%;
+    position: absolute;
+}
+.food-picture:hover .hover-thing{
+    top: 0;
+    transition: 1s;
+}
+.favor ,.desc {
+    position: absolute;
+    bottom: 10px;
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+ 
+
+}
+.favor {
+    right: 4em;
+}
+.desc {
+    right: 0.5em;
+}
+.para {
+    margin-top:0;
+    width: 100%;
+    height: 80%;
+    border: 1px solid rgba(128, 128, 128, 0.399);
+    padding: 0.5em 0.5em;
+    transition: 0.5s;
+}
+.first-child-fav{
+    display: none;
+ 
+}
+
+
+.para-left {
+    margin-top:400px;
+    transition: 0.5s;
+
+}
+.first-child-desc {
+    display: none;
+}
+.logo img:nth-child(2){
+    display: none;
+}
+.appear {
+    left:0;
+    background-color: black;
+    z-index: 3;
+    transition: 1s;
+}
+@media (max-width: 800px) {
+    nav{
+        position: absolute;
+        left:-200px;
+     
+    }
+   main {
+        margin: 0 auto;   
+    }
+    .headf .name {
+
+        display: none;
+    }
+    .logo img:nth-child(1){
+        display: none;
+    }
+    .logo img:nth-child(2){
+        display: block;
+        width: 2em;
+        cursor: pointer;
+    }
+   
+
+ 
+}

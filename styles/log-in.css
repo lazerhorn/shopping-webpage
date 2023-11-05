@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+html{
+    color: white;
+    background: linear-gradient(
+     #333 , 
+     #5B6467 
+    );
+    background-repeat: no-repeat;
+    min-height: 100%;
+}
+body {
+  
+    padding: 0 6em;
+
+}
+form {
+    background: linear-gradient(
+        
+        #414141,
+        #000000
+    );
+    background-repeat: repeat; 
+    min-width: 400px;
+    max-width: 600px;
+    min-height:480px;
+    border-radius: 2%;
+    margin: 2.5em auto 1em;
+    padding: 1em;
+    box-shadow: 1em 1em 10px rgba(28, 26, 26, 0.103);
+   
+  }
+  h1 {
+    margin:1em auto;
+    text-align: center;
+  }
+  form div > label {
+    display: block;
+    margin-bottom:1em ;
+    font-size: 1.25em;
+  }
+  form > div {
+    margin: 0.3em auto;
+    width: 70%;
+
+    height: 7em;
+  }
+  form > div > input {
+    width: 100%;
+    height: 3em;
+    padding-left: 0.5em;
+    border-radius: 5px;
+  
+  }
+  .last label {
+    display: inline-block;
+   
+    font-size: 1em;
+    margin-left: 0.6em;
+  }
+  .last input[type="checkbox"] {
+    width: unset;
+    vertical-align: middle;
+  }
+  .last p {
+    font-size: 0.8em;
+    height: 0.8em;
+  }
+  form ~ p {
+    text-align: center;
+    
+  }
+  a {
+    color:rgb(24, 24, 137);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: rgb(11, 11, 210);
+  }
+  form input[type="submit"]{
+    margin-top: 1.2em;
+  }
+
+  form > div > p {
+    color:rgb(214, 35, 35);
+  }

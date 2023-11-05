@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="stylesheet" href="styles/menu.css">
+</head>
+<body>
+    <header>
+        <div class="head-section headf">
+           
+            <div class="logo"><img src="pictures/icons8-noodles-48.png" alt="">
+                              <img src="pictures/T9dDzz01.svg" alt="" onclick="appear()"></div>
+            <div class="name"><p>𝓕𝓵𝓸𝓾𝓻𝓯𝓾𝓵 𝓓𝓮𝓵𝓲𝓰𝓱𝓽 知味面点</p></div>
+        </div>
+        <div class="head-section heads">
+           <form action="" id="form-input" >
+            <input type="search" class="search" id="search"placeholder="Search">
+            <button type="submit" title="search"><img src="pictures/picsvg_download (13).svg" alt=""></button>
+        </form>
+        </div>
+        <div class="head-section headt">
+            <div class="profile"><img src="pictures/HCioKI01.svg" alt=""></div>
+            <div class="cart"><a href="check-out.html"><img src="pictures/XZ0imh01.svg" alt=""><p id="cart-amount">0</p></a></div>
+        </div>
+    </header>
+    <div class="container">
+    <nav class="" id="nav">
+        <div class="box" id="historyyy" onclick="showhis(this)"><img src="pictures/wsviXH01.svg" alt=""><p>Favourites</p></div>
+        <div class="box"><img src="pictures/VcMH9R01.svg" alt=""><p>Discounts</p></div>
+        <div class="box"><img src="pictures/yItu9801.svg" alt=""><p>Premium</p></div>
+        <div class="box"><img src="pictures/jGLSjA01.svg" alt=""><p>History</p></div>
+    </nav> 
+    
+    <main>
+        <div class="slider">
+        <div class="icon" onclick="change(this,'buns','dumpling')" id="noodle"><img src="pictures/picsvg_download (8).svg" alt="" ><p>Noodles</p></div>
+        <div class="icon" onclick="change(this,'noodle','dumpling')" id="buns"><img src="pictures/FS9P6d01.svg" alt="" ><p>Buns</p></div>
+        <div class="icon" onclick="change(this,'noodle','buns')" id="dumpling"><img src="pictures/x3qvRw01.svg" alt="" ><p>Dumpling</p></div>
+        </div>
+        <div class="grid" id="grid">
+            <!-- <div class="food-container">
+                <div class="food-picture">
+                <img src="pictures/download (1).jfif" alt="">
+                </div>
+                <div class="food-info">
+                    <p>food 1</p>
+                    <p>Price</p>
+                </div>
+                <div class="amount">
+                    <div>
+                        <img src="pictures/2mMV0E01.svg" alt="">
+                    </div>
+                        <p>Amount</p>
+                    <div>
+                        <img src="pictures/Ls6B0m01.svg" alt="">
+                    </div>
+                        
+                </div>
+
+            </div>
+             -->
+
+            </div>
+        </div>
+    </main>
+    </div>
+    <script src="logic/food.js"></script>
+    <script src="logic/menu.js"> </script>
+</body>
+</html>

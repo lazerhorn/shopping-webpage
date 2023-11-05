@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form-page.css">
+    <title>form page</title>
+</head>
+<body>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" target="_blank" id="form" method="get">
+        <h1 id="head">CREATE ACCOUNT</h1>
+        <fieldset>
+
+            <div class="iFirst">
+            <input type="text" id="Cfirst" placeholder="First Name" class="name" required name="First Name">
+            <input type="text" id="Clast" placeholder="Last Name" class="name" required name="Last Name">
+            </div>
+            <div class="email-class">
+            <input type="email" id="email" placeholder="Email" required name="email">
+            <p id="email-verify"></p>
+            </div>
+            <input type="password" id="Cpass" placeholder="Password"  
+            pattern="(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}" required name="password">
+
+            <input type="text" id="Cmobile" pattern="[0-9]*" placeholder="Mobile Number" required name="mobile number">
+            
+            <label for="">Select your Gender</label>
+            <div class="gender" >
+
+        
+            <div onclick="select(this, 'girl')"id="boy"><img src="pictures/picsvg_download (5).svg" alt="" ></div>
+            <div onclick="select(this, 'boy')"id="girl"><img src="pictures/picsvg_download (4).svg" alt="" ></div>
+        
+            </div>
+            <label for="Caddress">Address</label>
+            <div class="address">
+            <input type="text" id="Aaddress" placeholder="Postal Code" required name="postal code">
+            <input type="text" id="Caddress" placeholder="Block Number" required name="block number">
+            </div>
+            <div class="race">
+            <label for="Crace">Race</label>
+            <select name="race"id="Crace" required>
+                <option value="Chinese">Chinese</option>
+                <option value="Malay">Malay</option>
+                <option value="Indian">Indian</option>
+                <option value="White">White</option>
+            </select>
+            </div>
+            <div class="terms">
+            <input type="checkbox" required>  I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>
+            </div>
+            <div class="email-class">
+            <input type="submit" >
+            <p id="email-valid"></p>
+            </div>
+            
+        </fieldset>
+
+    </form>
+    <p>Already have an Account? <a href="log-in.html">Login in</a> here!</p>
+
+    <script src="logic/form-page.js"></script>
+</body>
+</html>

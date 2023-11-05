@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+html{
+  color:white;
+    background: linear-gradient(
+      #333,
+      #5B6467
+        );
+    background-repeat: no-repeat;
+    min-height: 100%;
+    zoom: 80%;
+
+
+}
+body {
+    padding: 0 6em;
+
+}
+form {
+    background: linear-gradient(
+        
+        #414141,
+        #000000
+    );
+
+  
+    min-width: 20em;
+    max-width: 40em;
+    min-height: 40em;
+    border-radius: 2%;
+    margin: 2.5em auto 1em;
+    padding: 1em;
+    box-shadow: 1em 1em 10px rgba(28, 26, 26, 0.103);
+   
+  }
+  form input{
+    display: block;
+    
+  }
+  form label {
+    display: block;
+    margin-top: 1em;
+  }
+  form h1{
+    text-align: center;
+    margin: 1em 
+  }
+  form fieldset {
+    height: 100%;
+    border: none;
+   
+  }
+  input {
+    width: 69%;
+    margin: 2em auto;
+    height: 3em;
+    font-size: 1em;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    border-color:rgb(189, 187, 187);
+    outline-color: white;
+    
+  }
+  .name {
+   
+    width: 34%;
+    margin: 0;
+
+  }
+  .iFirst {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+  }
+
+  label {
+    color:white;
+
+    margin:auto;
+    width: 68%;
+    font-size: 1.3rem;
+
+  }
+  .address{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  .address > input {
+    width: 33%;
+    margin:0;
+  }
+ .race {
+   
+    width: 68%;
+    margin:auto;
+
+ }
+ .race label {
+    margin: 0.5em 0 0.1em;
+    width: 100%;
+ }
+ .race select {
+    width: 30%;
+    height: 2em;
+    color: black;
+ }
+.terms {
+    margin:auto;
+    width: 69%;
+
+}
+.terms input {
+    width: 1em;
+    display: inline;
+    vertical-align: middle;
+    
+}
+p{
+    text-align: center;
+    color:white;
+    margin-bottom: 2.5em;
+}
+a {
+    text-decoration: none;
+    color: rgb(73, 73, 223);
+}
+p a {
+    color: blue;
+}
+a:hover {
+    text-decoration: underline;
+}
+input[type="radio"]{
+    appearance: none;
+}
+.gender {
+    margin-top: 1em;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 0.2em;
+  
+  }
+  .gender img{
+    width: 40px;
+
+  }
+  .gender > div {
+    width: 33%;
+    border: 2px solid rgba(166, 163, 163, 0.459);
+    text-align: center;
+    cursor: pointer;
+ 
+  }
+  .gender > div:first-of-type{
+    border-color: white;
+  }
+#email-verify,#email-valid{
+    margin: 0.4em 0;
+    text-align: unset;
+    color: rgb(218, 23, 23);
+ 
+}
+.email-class {
+    height: 3.6em;
+    margin:1.8em auto;
+    width: 69%;
+}
+.email-class input {
+    width: 100%;
+    margin:0;
+
+}
+input[type="password"]{
+    margin-top:0.5em;
+}
